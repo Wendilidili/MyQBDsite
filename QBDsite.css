@@ -516,7 +516,7 @@ body {
   border-radius: 999px;
   max-width: 550px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 2px 20px;
   gap: 12px;
   font-size: 1.2rem;
 }
@@ -583,4 +583,54 @@ body {
 
 .newsletter-form button:hover {
   background-color: #e69e00;
+}
+
+/*footer*/
+footer {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.social-icons img{
+  width: 100px;
+  height: auto;
+}
+
+.footer-payments img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-bottom {
+  background-color: #8a1538; /* QBD maroon */
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 13px;
+  line-height: 1.6;
 }
