@@ -42,10 +42,12 @@
                             card.className = 'book-card';
                             card.innerHTML = `
                                 <img src="${book.image}" alt="${book.title}">
-                                <div class="book-title">${book.title}</div>
-                                <div class="book-author">${book.author}</div>
-                                <div class="book-price">${book.price}</div>
+                                <div class="book-details">
+                                    <div class="book-title">${book.title}</div>
+                                    <div class="book-author">${book.author}</div>
+                                    <div class="book-price">${book.price}</div>
+                                </div>
                                 <button class="add-to-cart">Add to Cart</button>
-                            `;
+                                `;
                             booksGrid.appendChild(card);
                             });

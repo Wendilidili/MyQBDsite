@@ -1,6 +1,7 @@
 body {
-    font-family: sans-serif, Arial, Helvetica;
-    margin: 0;  /*removes the default margin*/
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
 /*limiting screensize */
@@ -250,11 +251,6 @@ body {
   }
 
   /*The New Releases menu*/
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-}
 
 .gray-container {
   background-color: #efefef;
@@ -309,6 +305,7 @@ body {
   justify-content: space-evenly;
   position: relative; /* Needed for absolute positioning */
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .book-card:hover  {
@@ -322,7 +319,12 @@ body {
   border-radius: 8px;
   padding: 5px;
   object-fit: cover;
-  align-content: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.book-details {
+  text-align: left;
 }
 
 .book-title {
