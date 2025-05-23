@@ -4,7 +4,8 @@ const books = [
         author: "Rebecca Yarros",
         price: "$26.99",
         image: "Bookcovers/onyx-storm.webp",
-        discount: "-29% OFF"
+        discount: "-29% OFF",
+        format: "Hardcover"
     },
     {
         title: "Before the Coffee Gets Cold",
@@ -23,7 +24,8 @@ const books = [
         author: "Natasha Lester",
         price: "$24.99",
         image: "Bookcovers/themademoiselle.webp",
-        discount: "-29% OFF"
+        discount: "-29% OFF",
+        format: "Hardcover"
     },
     {
         title: "Orbital",
@@ -39,17 +41,23 @@ books.forEach(book => {
     const card = document.createElement('div');
     card.className = 'book-card';
 
-    // Check if a discount exists
     const discountBadge = book.discount
         ? `<div class="discount-badge">${book.discount}</div>`
         : '';
 
+    const formatTag = book.format
+        ? `<div class="book-format">${book.format}</div>`
+        : `<div class="book-format">&nbsp;</div>`;  // placeholder for alignment
+
     card.innerHTML = `
-        ${discountBadge}
-        <img src="${book.image}" alt="${book.title}">
+        <div class="image-wrapper">
+            <img src="${book.image}" alt="${book.title}">
+            ${discountBadge}
+        </div>
         <div class="book-details">
             <div class="book-title">${book.title}</div>
             <div class="book-author">${book.author}</div>
+            ${formatTag}
             <div class="book-price">${book.price}</div>
         </div>
         <button class="add-to-cart">Add to Cart</button>
