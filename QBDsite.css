@@ -32,6 +32,7 @@ body {
     padding: 10px 15px; 
     color: white;
     flex-wrap: wrap;
+    z-index: 1001;
 }
 
 
@@ -106,6 +107,63 @@ body {
     align-items: center;
   }
     
+/* Main dropdown container */
+.navlinks .dropdown {
+  position: relative;
+}
+
+/* Dropdown trigger */
+.dropbtn {
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+/* Mega dropdown hidden by default */
+.mega-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #921736;
+  color: white;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.365);
+  z-index: 1000;
+  min-width: 700px;
+}
+
+/* Show on hover */
+.dropdown:hover .mega-dropdown {
+  display: grid;
+}
+
+/* Column layout */
+.dropdown-column h4 {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column ul li {
+  padding: 5px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-column ul li:hover {
+  text-decoration: underline;
+}
+
   .nav-icons img {
     height: 30px;
     width: 35px;
