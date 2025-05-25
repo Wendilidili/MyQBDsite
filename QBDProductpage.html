@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head> 
+  <meta charset="UTF-8" />
+  <title>QBD Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="QBDHomepage.css">
+</head>
+
+
+<body> 
+
+  <div class="page-wrapper">
+
+    <!-- Top Promotional Banner -->
+    <div class="promobanner">
+      UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">      
+      
+      
+      <div class="navleft">
+        <div class="hamburger">
+                <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
+
+                <!-- Side Navigation -->
+                <div class="side-menu" id="side-menu">
+                  <button class="close-btn" id="close-menu">&times;</button>
+                  <nav>
+                    <a href="#">Home</a>
+
+                    <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
+                    <div class="submenu" id="books-submenu">
+                      <a href="#">Fiction</a>
+                      <a href="#">Non-Fiction</a>
+                      <a href="#">Fantasy & Sci-fi</a>
+                      <a href="#">Australian Fiction</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="bargains-submenu">Bargains</a>
+                    <div class="submenu" id="bargains-submenu">
+                      <a href="#">Sale</a>
+                      <a href="#">Clearance</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="clubs-submenu">Clubs</a>
+                    <div class="submenu" id="clubs-submenu">
+                      <a href="#">QBD Book Club</a>
+                      <a href="#">Kids Club</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="find-submenu">Find Local QBD</a>
+                    <div class="submenu" id="find-submenu">
+                      <a href="#">Store Locator</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <script src="Javascript/MobileMenupage.js"></script>
+
+        </div>
+
+        <div class="QBDlogo">
+          <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
+          <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
+        </div>
+
+        <nav>
+          <ul class="navlinks">
+            <li><a href="QBDsite.html">Home</a></li>
+                <li class="dropdown">
+                  <span class="dropbtn">Books ▾</span>
+                  <div class="mega-dropdown">
+                    <div class="dropdown-column">
+                      <h4>Browse by</h4>
+                      <ul>
+                        <li>Fiction</li>
+                        <li>Non-Fiction</li>
+                        <li>Bestsellers</li>
+                        <li>Coming Soon</li>
+                        <li>Sales</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Genre</h4>
+                      <ul>
+                        <li>Fantasy and Sci-fi</li>
+                        <li>Australian fiction</li>
+                        <li>Crime</li>
+                        <li>Young Adult</li>
+                        <li>Graphic Novels</li>
+                        <li>Poetry</li>
+                        <li>Romance</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Author</h4>
+                      <ul>
+                        <li>Tony Birch</li>
+                        <li>Claire Keegan</li>
+                        <li>Melissa Lucashenko</li>
+                        <li>Ann Patchett</li>
+                        <li>Zadie Smith</li>
+                        <li>Colm Toibin</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+            <li>Bargains</li>
+            <li>Clubs</li>
+            <li>Find Local QBD</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-cart">
+          <input type="text" placeholder="Search Titles..." id="search-input" />
+          <img id="search" src="Icons/searchicon.png" alt="Search Icon">
+        </div>
+
+        <div class="nav-icons">
+          <img src="Icons/heart.png" alt="Wishlist" />
+          <img src="Icons/profile.png" alt="User" />
+          <img src="Icons/Cart.png" alt="Cart" />
+        </div>
+      </div>
+    </header>

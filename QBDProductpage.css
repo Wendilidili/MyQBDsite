@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/*limiting screensize */
+.page-wrapper {
+    max-width: 1368px;
+    margin: 0 auto;
+    overflow-x: hidden;  /*ensures elements that flow over screen are hidden*/
+}
+
+.promobanner{
+    background-color: #3E0715;
+    color: white;
+    text-align: center;
+    font-size: clamp(0.65rem, 2vw, 0.9rem); /*use percentage for screen size scaling */
+    padding: 6px;
+    font-weight: bold;
+
+}
+
+.navbar{
+    background-color: #921736;
+    position:sticky;
+    top:0; 
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 15px; 
+    color: white;
+    flex-wrap: wrap;
+    z-index: 1001;
+}
+
+
+.navleft {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Base image styles */
+.menu-img {
+  height: 30px;
+  width: auto;
+}
+
+.QBDlogo img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+/* Default: show desktop logo, hide mobile logo & hamburger */
+#QBDdlogo {
+  display: block;
+}
+
+#QBDmlogo,
+#hamburgerIcon {
+  display: none;
+  color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 1000px) {
+  #QBDdlogo {
+    display: none;
+  }
+
+  #QBDmlogo,
+  #hamburgerIcon {
+    display: block;
+  }
+}
+
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  max-width: 390px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu button.close-btn {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  float: right;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.side-menu nav {
+  margin-top: 60px;
+}
+
+.side-menu a {
+  display: block;
+  padding: 16px;
+  border-bottom: 2px solid #ddd;
+  color: #800028;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+  background-color: #BBBBBB;
+}
+
+.submenu a {
+  font-weight:lighter;
+  color:#454545;
+  font-size: 1.2rem;
+}
+
+.dropdown-toggle::after {
+  content: '▾';
+  float: right;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.open::after {
+  transform: rotate(180deg);
+}
+
+/* navigation links styling*/ 
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration:none;
+}
+
+
+@media (max-width: 1000px) {
+  .navlinks {
+    display: none !important;
+  }
+}
+
+/*nav right icons and search bar styling*/
+.nav-right {
+    display: flex;
+    align-items: center;
+  }
+    
+/* Main dropdown container */
+.navlinks .dropdown {
+  position: relative;
+}
+
+/* Dropdown trigger */
+.dropbtn {
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+/* Mega dropdown hidden by default */
+.mega-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #921736;
+  color: white;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.365);
+  z-index: 1000;
+  min-width: 700px;
+}
+
+/* Show on hover */
+.dropdown:hover .mega-dropdown {
+  display: grid;
+}
+
+/* Column layout */
+.dropdown-column h4 {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column ul li {
+  padding: 5px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-column ul li:hover {
+  text-decoration: underline;
+}
+
+  .nav-icons img {
+    height: 30px;
+    width: 35px;
+    object-fit: contain;
+    cursor: pointer;
+  }  
+
+   .nav-icons img:hover{
+  background-color: 3E0715;
+}
+
+
+  .search-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-cart input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+ .search-input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+  }
+
+ /* Hiding and revealing search bar depending on screen size*/
+#search-input {
+  display: block;
+  margin-right: 15px;
+}
+
+#search {
+  display: none;
+  height: 40px; 
+  width: auto; 
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  #search-input{
+    display: none;
+  }
+
+ #search {
+    display: block;
+  }
+}
+
