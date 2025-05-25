@@ -25,7 +25,43 @@
       
       <div class="navleft">
         <div class="hamburger">
-          <img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon">
+                <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
+
+                <!-- Side Navigation -->
+                <div class="side-menu" id="side-menu">
+                  <button class="close-btn" id="close-menu">&times;</button>
+                  <nav>
+                    <a href="#">Home</a>
+
+                    <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
+                    <div class="submenu" id="books-submenu">
+                      <a href="#">Fiction</a>
+                      <a href="#">Non-Fiction</a>
+                      <a href="#">Fantasy & Sci-fi</a>
+                      <a href="#">Australian Fiction</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="bargains-submenu">Bargains</a>
+                    <div class="submenu" id="bargains-submenu">
+                      <a href="#">Sale</a>
+                      <a href="#">Clearance</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="clubs-submenu">Clubs</a>
+                    <div class="submenu" id="clubs-submenu">
+                      <a href="#">QBD Book Club</a>
+                      <a href="#">Kids Club</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="find-submenu">Find Local QBD</a>
+                    <div class="submenu" id="find-submenu">
+                      <a href="#">Store Locator</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <script src="Javascript/MobileMenupage.js"></script>
+
         </div>
 
         <div class="QBDlogo">
