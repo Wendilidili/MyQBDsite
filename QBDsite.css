@@ -18,8 +18,6 @@ body {
     font-size: clamp(0.65rem, 2vw, 0.9rem); /*use percentage for screen size scaling */
     padding: 6px;
     font-weight: bold;
-    position: sticky;
-    top: 0;
 }
 
 .navbar{
