@@ -18,6 +18,7 @@ body {
     font-size: clamp(0.65rem, 2vw, 0.9rem); /*use percentage for screen size scaling */
     padding: 6px;
     font-weight: bold;
+
 }
 
 .navbar{
@@ -220,7 +221,7 @@ body {
 /*Hero image/banner*/
 
   .hero {
-    background: url('Mainpagedimg.png') no-repeat center center/cover;
+    background: url('Mainpageimages/Mainpagedimg.png') no-repeat center center/cover;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -244,7 +245,7 @@ body {
   
   @media (max-width: 600px) {
   .hero{
-    background-image: url('Mainpagemimg.png');
+    background-image: url('Mainpageimages/Mainpagemimg.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -408,6 +409,7 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
@@ -471,7 +473,7 @@ body {
 
 /* Shop by Category Styles */
 .category-section {
-  background-image: url(MainpagecategoryimgD.png);
+  background-image: url('Mainpageimages/MainpagecategoryimgD.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -485,7 +487,7 @@ body {
 
   @media (max-width: 700px) {
   .category-section{
-    background-image: url('MainpagecategoryimgM.png');
+    background-image: url('Mainpageimages/MainpagecategoryimgM.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -591,7 +593,7 @@ body {
 }
 /* Newsletter Styles */
 .newsletter-banner {
-  background: url('newsletterimage.png') center center / cover no-repeat;
+  background: url('Mainpageimages/newsletterimage.png') center center / cover no-repeat;
   border: 5px solid white;
   border-radius: 50px;
   padding: 150px 20px;
