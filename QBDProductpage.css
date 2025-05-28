@@ -382,6 +382,10 @@ body {
   .product-section{
     height: 130rem;
   }
+
+  .footer-main{
+    margin-top: -70px;
+  }
 }
 .product-image img {
     height: 50vh;
@@ -730,6 +734,14 @@ footer {
   padding: 50px;
   background-color: #f9f9f9;
   flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+@media (max-width: 854px) {
+
+  .footer-main{
+    margin-top: -140px;
+  }
 }
 
 .footer-column {
