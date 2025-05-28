@@ -37,7 +37,7 @@ const books = [
 
 const booksGrid = document.getElementById('books-grid');
 
-books.forEach(book => {
+books.forEach((book, index) => {
     const card = document.createElement('div');
     card.className = 'book-card';
 
@@ -63,5 +63,14 @@ books.forEach(book => {
         <button class="add-to-cart">Add to Cart</button>
     `;
 
-    booksGrid.appendChild(card);
+    if (index === 0) {
+        const anchor = document.createElement('a');
+        anchor.href = 'QBDProductpage.html'; 
+        anchor.style.textDecoration = 'none';
+        anchor.appendChild(card);
+        booksGrid.appendChild(anchor);
+    } else {
+        booksGrid.appendChild(card);
+    }
 });
+

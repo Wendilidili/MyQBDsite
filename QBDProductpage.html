@@ -1,28 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
-
-
-<head> 
-  <meta charset="UTF-8" />
-  <title>QBD Books</title>
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="QBDHomepage.css">
+  <title>Onyx Storm</title>
+  <link rel="stylesheet" href="QBDProductpage.css">
 </head>
 
+<body>
 
-<body> 
+ <div class="page-wrapper"> 
 
-  <div class="page-wrapper">
-
-    <!-- Top Promotional Banner -->
     <div class="promobanner">
       UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
     </div>
 
-    <!-- Navbar -->
+    <!--Header-->
     <header class="navbar">      
-      
-      
       <div class="navleft">
         <div class="hamburger">
                 <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
@@ -31,7 +24,7 @@
                 <div class="side-menu" id="side-menu">
                   <button class="close-btn" id="close-menu">&times;</button>
                   <nav>
-                    <a href="#">Home</a>
+                    <a href="QBDHomepage.html">Home</a>
 
                     <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
                     <div class="submenu" id="books-submenu">
@@ -71,7 +64,7 @@
 
         <nav>
           <ul class="navlinks">
-            <li><a href="QBDsite.html">Home</a></li>
+            <li><a href="QBDHomepage.html">Home</a></li>
                 <li class="dropdown">
                   <span class="dropbtn">Books ▾</span>
                   <div class="mega-dropdown">
@@ -133,3 +126,134 @@
         </div>
       </div>
     </header>
+
+
+            <!--Main Page Content-->
+        <div class="breadcrumb">
+            Home &gt; Books &gt; Fantasy & Sci-fi &gt; Onyx Storm
+        </div>
+
+<!-- Updated layout with description under image + product info -->
+    <div class="product-section">   
+        <div class="product-page">
+            
+        <!-- LEFT SIDE -->
+        <div class="left-column">
+            <div class="product-top">
+            <div class="product-image">
+                <img src="Bookcovers/onyx-storm.webp" alt="Onyx Storm Book Cover">
+                   <div class="ratings">
+                      <div class="stars">
+                          &#9733;&#9733;&#9733;&#9734;&#9734;
+                      </div>
+                      <a href="#">View reader ratings...</a>
+                    </div>
+            </div>
+
+            <div class="product-details">
+                <div class="format">Hardcover</div>
+                <div class="title">Onyx Storm <span class="discount-tag">-23%</span></div>
+                <div class="author">Rebecca Yarros</div>
+                <div class="series">(The Empyrean, Book 3)</div>
+
+                <div class="format-buttons">
+                <button class="active">Hardcover</button>
+                <button>Paperback</button>
+                </div>
+                <br>
+                <div class="price-section">
+                <div class="original-price">$34.99</div>
+                <div class="discounted-price">$26.99</div>
+                </div>
+
+                <div class="quantity-selector">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="wishlist">Add to Wishlist +</div>
+                    
+            </div>
+            </div>
+
+            <!-- DESCRIPTION BELOW IMAGE + DETAILS -->
+            <div class="description">
+              <div class="tabs">
+                  <button class="tab-button active" data-target="overview">Overview</button>
+                  <button class="tab-button" data-target="ratings">Reviews</button>
+                </div>
+
+                <div id="overview" class="tab-content active">
+                  <p>
+                    After nearly eighteen months at Basgiath War College, Violet Sorrengail knows there's no more time for lessons. No more time for uncertainty. Because the battle has truly begun, and with enemies closing in from outside their walls and within their ranks, it's impossible to know who to trust.
+                    Now Violet must journey beyond the failing Aretian wards to seek allies from unfamiliar lands to stand with Navarre. The trip will test every bit of her wit, luck, and strength, but she will do anything to save what she loves - her dragons, her family, her home, and him.
+                      <br><br>
+                    Even if it means keeping a secret so big, it could destroy everything.
+                    They need an army. They need power. They need magic. And they need the one thing only Violet can find - the truth.
+                      <br><br>
+                    But a storm is coming... and not everyone can survive its wrath.
+                  </p>
+                </div>
+
+                <div id="ratings" class="tab-content">
+                    <div class="review-section">
+                      <div class="review-card">
+                        <p><strong>👤 <a href="#">Username</a></strong></p>
+                        <div class="stars">⭐⭐⭐☆☆</div>
+                        <p class="review-text">
+                          What a repetitive drag. I called it after Iron Flame -- there is just not five books worth of story here.
+                        </p>
+                      </div>
+
+                      <div class="review-card">
+                        <p><strong>👤 <a href="#">Username</a></strong></p>
+                        <div class="stars">⭐⭐⭐⭐☆</div>
+                        <p class="review-text">
+                          I liked this more than I thought I would. It was much better than Iron Flame imo. Was this a filler book? Yes. Was it basically a book of side quests? yes. Was it still entertaining? For me, yes.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                
+                </div>
+        <!-- RIGHT SIDE -->
+
+
+    </div> 
+    <div class="right-column">
+
+            <div class="availability">
+            <h3>Availability</h3>
+            <p>In Store<br>
+                <a href="#">Available at 8 locations</a>
+            </p>
+            <br>
+            <p>Shipping and Delivery<br>
+                <a href="#">Available at to order, ships in 2 days</a>
+            </p>
+
+            <div class="spacer"></div>
+            <br>
+            <div><strong>Authors</strong> <span style="color:#c2185b">Rebecca Yarros</span></div>
+            <div><strong>ISBN</strong> 9780349443768</div>
+            <div><strong>Published</strong> 21/01/2025</div>
+            <div><strong>Binding</strong> Paperback</div>
+            <div><strong>Pages</strong> 544</div>
+            <div><strong>Dimensions</strong> 155 × 235 × 41mm</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="search-catalogue">
+        <h2>Looking for something else?</h2>
+          <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search book title here..." />
+  </div>
+      </div>
+
+<script src="Javascript/QBDProductpage.js"></script>
+</body>
+</html>

@@ -380,7 +380,7 @@ body {
 .grey-container {
   background-color: #ebebeb;
   padding: 40px 30px;
- border-radius: 40px;
+  border-radius: 40px;
   margin-top: -60px;
   position: relative;
   z-index: 3;
@@ -479,6 +479,7 @@ body {
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
+  color:black;
 }
 
 .book-author {
@@ -545,11 +546,11 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  height: 150vh;
+  height: 135vh;
   z-index: 1;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 20px 30px;
   margin-top: -35px;
 }
 
@@ -559,7 +560,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 170vh;
+    height: 175vh;
     z-index: 1;
   }
 }
