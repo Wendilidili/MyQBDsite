@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <title>QBD Books</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="QBDHomepage.css">
+  <link rel="stylesheet" href="QBDBrowse.css">
 </head>
 
 
@@ -134,15 +134,77 @@
       </div>
     </header>
 
-<div class="Page-title">
+<div class="page-title">
+  <div class="title-text">
     <h1>Fantasy & Sci-fi</h1>
-    <p>Escape into worlds of magic, mythical creatures, and epic quests - where heroes rise, legends are born, and anything is possible.</p>
+    <p>
+      Escape into worlds of magic, mythical creatures, and epic quests —
+      where heroes rise, legends are born, and anything is possible.
+    </p>
+  </div>
+  <div class="book-image">
+    <img src="Bookcovers/Fantasy_bookpile.png" alt="Stacked fantasy books" >
+  </div>
+</div>
+
+<div class="products-section">
+  <div class="section-header">
+    <h2>Top Selections</h2>
+    <a href="#">View more...</a>
+    </div>
+         <div class="books-grid" id="books-grid">
+        <!-- Books go here -->
+         </div> 
+  </div>
+
+  <div class="products-section2">
+        <div class="filter-bar">
+            <button class="filter-button">
+                <span class="icon"><img src="Icons/filtericon.png" alt="Filter icon"> </span> Filter
+            </button>
+
+
+            <div class="sort-dropdown">
+                <div class="view-toggle">
+                    <span class="icon active"><img src="Icons/Gridicon.png" alt="Grid Icon"> </span> Grid
+                    <span class="icon"><img src="Icons/Listicon.png" alt="List icon"> </span> List
+                </div>
+
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+                <option>Best Selling</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="genreintroduction">
+            <h1>Browse Fantasy Books</h1>
+            <p>Here in QBD Books, we offer a large range of fantasy books that will whisk you away to enchanted worlds, where magic is real, mythical creatures roam, and epic adventures await at every turn. Whether you’re searching for heroic quests, ancient prophecies, or realms brimming with wonder, there’s a story here waiting to spark your imagination.</p>
+
+        </div>
+
+
+        <div class="books-row1" id="books-row1">
+            <!-- books go here-->
+        </div>
+
+        <div class="books-row2" id="books-row2">
+
+        </div>
+        
+  </div>
+</div>
+
 </div>
 
 
 
 
 
-
 </div>
+
+ <script src="Javascript/QBDBrowse.js"></script>
 </body>
