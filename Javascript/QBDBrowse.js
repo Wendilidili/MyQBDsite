@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: "$16.99",
         image: "Bookcovers/Orbital.webp"
     }
+    
   ];
 
   books.forEach((book) => {
