@@ -539,6 +539,115 @@ body {
   cursor: pointer;
 }
 
+#filter-toggle.filter-menu {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#filter-toggle img {
+  width: 20px;
+  height: 20px;
+}
+
+/* New filter-specific menu, but same style */
+#filter-menu.side-menu {
+  left: auto;
+  right: -100%;
+  transition: right 0.3s ease;
+}
+
+#filter-menu.side-menu.open {
+  right: 0;
+  left: auto;
+}
+
+/* SECTION TITLE STYLING */
+
+
+.dropdown-toggle:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown-toggle::after {
+  content: '▾';
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.open::after {
+  content: '▴';
+}
+
+/* SUBMENU STYLE */
+.submenu {
+  background-color: #d3d3d3;
+  padding: 10px 16px;
+  display: none;
+}
+
+.submenu label {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.submenu input[type="radio"] {
+  margin-right: 4px;
+}
+
+/* ACTIVE SECTION */
+.submenu.open {
+  display: block;
+}
+
+#filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+#filter-toggle img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Default mobile drawer layout */
+#filter-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 390px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* Slide in when open */
+#filter-menu.open {
+  right: 0;
+}
+
+/* Hide filter menu on desktop */
+@media (min-width: 768px) {
+  #filter-menu {
+    display: none !important;
+  }
+}
+
 
 
 .view-toggle {
@@ -576,6 +685,57 @@ body {
   display: none;
 }
 }
+
+/* Filter Menu Styling */
+.filter-menu {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 999;
+}
+.filter-menu.open {
+  right: 0;
+}
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2em;
+}
+.close-filter {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.filter-section {
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+}
+.filter-options label {
+  display: block;
+  margin: 6px 0;
+}
+.highlight {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  #filterMenu {
+    display: none !important;
+  }
+}
+
 
 .genreintroduction{
     font-size: clamp(0.6rem, 2vw, 1.1rem);;
