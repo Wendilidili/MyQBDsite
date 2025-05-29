@@ -168,41 +168,60 @@
   <img src="Icons/filtericon.png" alt="Filter icon"> Filter
 </button>
 
+
+
 <!-- Filter Side Menu -->
 <div class="side-menu" id="filter-menu">
   <button class="close-btn" id="close-filter">&times;</button>
   <nav>
-    <a href="#" class="dropdown-toggle" data-target="price-filter">Price Range</a>
-    <div class="submenu" id="price-filter">
-      <label><input type="radio" name="price" value="under10"> Under $10</label>
-      <label><input type="radio" name="price" value="10-30" checked> $10 - $30</label>
-      <label><input type="radio" name="price" value="25-50"> $25 - $50</label>
-      <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
-    </div>
+  <!-- Price Range -->
+  <a href="#" class="dropdown-toggle" data-target="price-filter">Price Range</a>
+  <div class="submenu" id="price-filter">
+    <label><input type="radio" name="price" value="under10"> Under $10</label>
+    <label><input type="radio" name="price" value="10-30"checked> $10 - $30</label>
+    <label><input type="radio" name="price" value="25-50"> $25 - $50</label>
+    <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
+  </div>
 
-    <a href="#" class="dropdown-toggle" data-target="availability-filter">Availability</a>
-    <div class="submenu" id="availability-filter">
-      <!-- Add availability options -->
-    </div>
+  <!-- Availability -->
+  <a href="#" class="dropdown-toggle" data-target="availability-filter">Availability</a>
+  <div class="submenu" id="availability-filter">
+    <label><input type="radio" name="availability" value="in-stock"> In Stock</label>
+    <label><input type="radio" name="availability" value="in-stores"> In Stores</label>
+    <label><input type="radio" name="availability" value="special-order"> Special Order</label>
+    <label><input type="radio" name="availability" value="pre-order"> Pre-Order</label>
+  </div>
 
-    <a href="#" class="dropdown-toggle" data-target="discount-filter">Discounted</a>
-    <div class="submenu" id="discount-filter">
-      <label><input type="radio" name="discount" value="10-20"> 10-20%</label>
-      <label><input type="radio" name="discount" value="20-40" checked> 20-40%</label>
-      <label><input type="radio" name="discount" value="40-60"> 40-60%</label>
-      <label><input type="radio" name="discount" value="over60"> Over 60%</label>
-    </div>
+  <!-- Discounted -->
+  <a href="#" class="dropdown-toggle" data-target="discount-filter">Discounted</a>
+  <div class="submenu" id="discount-filter">
+    <label><input type="radio" name="discount" value="10-20"> 10-20%</label>
+    <label><input type="radio" name="discount" value="20-40"checked> 20-40%</label>
+    <label><input type="radio" name="discount" value="40-60"> 40-60%</label>
+    <label><input type="radio" name="discount" value="over60"> Over 60%</label>
+  </div>
 
-    <a href="#" class="dropdown-toggle" data-target="binding-filter">Binding</a>
-    <div class="submenu" id="binding-filter">
-      <!-- Add binding options -->
-    </div>
+  <!-- Binding -->
+  <a href="#" class="dropdown-toggle" data-target="binding-filter">Binding</a>
+  <div class="submenu" id="binding-filter">
+    <label><input type="radio" name="binding" value="paperback"> Paperback</label>
+    <label><input type="radio" name="binding" value="hardcover"> Hardcover</label>
+    <label><input type="radio" name="binding" value="box-set"> Box Set</label>
+  </div>
 
-    <a href="#" class="dropdown-toggle" data-target="dispatch-filter">Dispatch</a>
-    <div class="submenu" id="dispatch-filter">
-      <!-- Add dispatch options -->
-    </div>
+  <!-- Dispatch -->
+  <a href="#" class="dropdown-toggle" data-target="dispatch-filter">Dispatch</a>
+  <div class="submenu" id="dispatch-filter">
+    <label><input type="radio" name="dispatch" value="same-day"> Same Day</label>
+    <label><input type="radio" name="dispatch" value="1-2-days"> 1–2 Days</label>
+    <label><input type="radio" name="dispatch" value="3-7-days"> 3–7 Days</label>
+  </div>
   </nav>
+
+      <div class="filter-footer">
+      <button class="apply-filter-btn">Filter</button>
+     </div>
+
 </div>
 
             <div class="sort-dropdown">

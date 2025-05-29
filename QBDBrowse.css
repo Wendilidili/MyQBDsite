@@ -613,7 +613,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 8px 12px;
+  padding: 8px 0px;
   background: #fff;
   cursor: pointer;
 }
@@ -639,13 +639,6 @@ body {
 /* Slide in when open */
 #filter-menu.open {
   right: 0;
-}
-
-/* Hide filter menu on desktop */
-@media (min-width: 768px) {
-  #filter-menu {
-    display: none !important;
-  }
 }
 
 
@@ -734,6 +727,36 @@ body {
   #filterMenu {
     display: none !important;
   }
+}
+
+/* Sticky bottom button inside the filter menu */
+.filter-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 16px;
+  background: white;
+}
+
+/* Button styling */
+.apply-filter-btn {
+  background-color: #f9a825; /* QBD gold style */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.apply-filter-btn:hover {
+  background-color: #f57f17;
 }
 
 
