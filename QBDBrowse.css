@@ -386,6 +386,10 @@ body {
   scrollbar-width: none;
 }
 
+.books-grid::-webkit-scrollbar {
+  display: none;
+}
+
 .book-card {
   flex-shrink: 0;
   width: clamp(150px, 15vw, 225px);
@@ -492,7 +496,6 @@ body {
   border-radius: 3px;
   margin-bottom: 8px;
 }
-
 
 .products-section2 {
   background-color: #F3F3F3;

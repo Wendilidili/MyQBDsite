@@ -210,6 +210,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //filter menu:
+// Toggle filter dropdown on desktop
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('filter-toggle');
+  const dropdown = document.getElementById('filterDropdown');
+
+  toggleBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('show');
+  });
+});
+
+
+
 
 // Filter menu logic
 const filterToggle = document.getElementById('filter-toggle');
