@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyx Storm</title>
+  <link rel="stylesheet" href="QBDSearch.css">
+</head>
+
+<body>
+
+ <div class="page-wrapper"> 
+
+    <div class="promobanner">
+      UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
+    </div>
+
+    <!--Header-->
+    <header class="navbar">      
+      <div class="navleft">
+        <div class="hamburger">
+                <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
+
+                <!-- Side Navigation -->
+                <div class="side-menu" id="side-menu">
+                  <button class="close-btn" id="close-menu">&times;</button>
+                  <nav>
+                    <a href="QBDHomepage.html">Home</a>
+
+                    <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
+                    <div class="submenu" id="books-submenu">
+                      <a href="#">Fiction</a>
+                      <a href="#">Non-Fiction</a>
+                      <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                      <a href="#">Australian Fiction</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="bargains-submenu">Bargains</a>
+                    <div class="submenu" id="bargains-submenu">
+                      <a href="#">Sale</a>
+                      <a href="#">Clearance</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="clubs-submenu">Clubs</a>
+                    <div class="submenu" id="clubs-submenu">
+                      <a href="#">QBD Book Club</a>
+                      <a href="#">Kids Club</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="find-submenu">Find Local QBD</a>
+                    <div class="submenu" id="find-submenu">
+                      <a href="#">Store Locator</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <script src="Javascript/MobileMenupage.js"></script>
+
+        </div>
+
+        <div class="QBDlogo">
+          <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
+          <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
+        </div>
+
+        <nav>
+          <ul class="navlinks">
+            <li><a href="QBDHomepage.html">Home</a></li>
+                <li class="dropdown">
+                  <span class="dropbtn">Books ▾</span>
+                  <div class="mega-dropdown">
+                    <div class="dropdown-column">
+                      <h4>Browse by</h4>
+                      <ul>
+                        <li>Fiction</li>
+                        <li>Non-Fiction</li>
+                        <li>Bestsellers</li>
+                        <li>Coming Soon</li>
+                        <li>Sales</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Genre</h4>
+                      <ul>
+                        <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                        <li>Australian fiction</li>
+                        <li>Crime</li>
+                        <li>Young Adult</li>
+                        <li>Graphic Novels</li>
+                        <li>Poetry</li>
+                        <li>Romance</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Author</h4>
+                      <ul>
+                        <li>Tony Birch</li>
+                        <li>Claire Keegan</li>
+                        <li>Melissa Lucashenko</li>
+                        <li>Ann Patchett</li>
+                        <li>Zadie Smith</li>
+                        <li>Colm Toibin</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+            <li>Bargains</li>
+            <li>Clubs</li>
+            <li>Find Local QBD</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-cart">
+          <input type="text" placeholder="Search Titles..." id="search-input" />
+          <img id="search" src="Icons/searchicon.png" alt="Search Icon">
+        </div>
+
+        <div class="nav-icons">
+          <img src="Icons/heart.png" alt="Wishlist" />
+          <img src="Icons/profile.png" alt="User" />
+          <img src="Icons/Cart.png" alt="Cart" />
+        </div>
+      </div>
+    </header>
+
+            <!--Main Page Content-->
+        <div class="breadcrumb">
+            <h3>Search Results for 'The Book of Azrael'</h3>
+        </div>
+
+        <div class="grey-container">
+
+              <div class="filter-bar">
+                    <button class="filter-button" id="filter-toggle">
+                        <span class="icon"><img src="Icons/filtericon.png" alt="Filter icon"> </span> Filter
+                    </button>
+
+                    <div class="sort-dropdown">
+                            <div class="view-toggle">
+                                <span class="icon active"><img src="Icons/Gridicon.png" alt="Grid Icon"> </span> Grid
+                                <span class="icon"><img src="Icons/Listicon.png" alt="List icon"> </span> List
+                            </div>
+
+                        <label for="sort">Sort By</label>
+                            <select id="sort">
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                            <option>Best Selling</option>
+                            </select>
+                    </div>
+              </div>
+
+              <div class="search-result">
+                <h2>Showing 1 of 1 Results</h2>
+              </div>
+                  <div class="results-row" id="results-row">
+                              <!-- books go here-->
+                  </div>
+        
+             <div class="spacer"></div>
+
+            <div class="pagination-bar">
+                <div class="show-per-page">
+                    <label for="per-page-select">Show</label>
+                    <select id="per-page-select">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    </select>
+                    <span>per page</span>
+                </div>
+
+                <div class="pagination-controls">
+                    <button class="page-arrow">&lt;</button>
+                    <button class="page-number active">1</button>
+                    <button class="page-arrow">&gt;</button>
+                </div>
+            </div>
+
+            <div class="search-catalogue">
+                <h2>Looking for something else?</h2>
+                <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search book title here..." />
+                </div>
+            </div>
+
+        </div>
+
+        
+                <!--footer starts here-->
+            <footer>
+            <div class="footer-main">
+                <div class="footer-column">
+                <h4>Contact</h4>
+                <p>(07) 3291 7444</p>
+                <p>Contact Form</p>
+                <p>Education / Book Fairs</p>
+
+                <h4>Social</h4>
+                <div class="social-icons">
+                    <img src="Icons/socialsicon.png" alt="icons of socials">
+                </div>
+                </div>
+
+                <div class="footer-column">
+                <h4>Information</h4>
+                <p>About QBD</p>
+                <p>Loyalty</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Jobs</p>
+                <p>Affiliates</p>
+                <p>Sitemap</p>
+                </div>
+
+                <div class="footer-column">
+                <h4>Help</h4>
+                <p>Unsubscribe</p>
+                <p>Track My Orders</p>
+                <p>Shipping & Delivery</p>
+                <p>Returns Policy</p>
+                <p>FAQs</p>
+                <p>About Zip</p>
+                </div>
+
+                <div class="footer-payments">
+                <img src="Icons/paymentmethods.png" alt="payment methods">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
+                The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
+                Due to our competitive pricing, we may have not sold all products at their original RRP.
+                </p>
+                <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
+            </div>
+            </footer>
+
+        </div>
+        <script src="Javascript/QBDSearchresults.js"></script>
+
+</body>
+</html>
+
