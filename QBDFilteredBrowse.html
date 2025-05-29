@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head> 
+  <meta charset="UTF-8" />
+  <title>QBD Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="QBDBrowse.css">
+</head>
+
+
+<body> 
+
+  <div class="page-wrapper">
+
+    <!-- Top Promotional Banner -->
+    <div class="promobanner">
+      UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">      
+      
+      
+      <div class="navleft">
+        <div class="hamburger">
+                <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
+
+                <!-- Side Navigation -->
+                <div class="side-menu" id="side-menu">
+                  <button class="close-btn" id="close-menu">&times;</button>
+                  <nav>
+                    <a href="#">Home</a>
+
+                    <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
+                    <div class="submenu" id="books-submenu">
+                      <a href="#">Fiction</a>
+                      <a href="#">Non-Fiction</a>
+                      <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                      <a href="#">Australian Fiction</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="bargains-submenu">Bargains</a>
+                    <div class="submenu" id="bargains-submenu">
+                      <a href="#">Sale</a>
+                      <a href="#">Clearance</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="clubs-submenu">Clubs</a>
+                    <div class="submenu" id="clubs-submenu">
+                      <a href="#">QBD Book Club</a>
+                      <a href="#">Kids Club</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="find-submenu">Find Local QBD</a>
+                    <div class="submenu" id="find-submenu">
+                      <a href="#">Store Locator</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <script src="Javascript/MobileMenupage.js"></script>
+
+        </div>
+
+        <div class="QBDlogo">
+          <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
+          <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
+        </div>
+
+        <nav>
+          <ul class="navlinks">
+            <li><a href="QBDHomepage.html">Home</a></li>
+                <li class="dropdown">
+                  <span class="dropbtn">Books ▾</span>
+                  <div class="mega-dropdown">
+                    <div class="dropdown-column">
+                      <h4>Browse by</h4>
+                      <ul>
+                        <li>Fiction</li>
+                        <li>Non-Fiction</li>
+                        <li>Bestsellers</li>
+                        <li>Coming Soon</li>
+                        <li>Sales</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Genre</h4>
+                      <ul>
+                        <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                        <li>Australian fiction</li>
+                        <li>Crime</li>
+                        <li>Young Adult</li>
+                        <li>Graphic Novels</li>
+                        <li>Poetry</li>
+                        <li>Romance</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Author</h4>
+                      <ul>
+                        <li>Tony Birch</li>
+                        <li>Claire Keegan</li>
+                        <li>Melissa Lucashenko</li>
+                        <li>Ann Patchett</li>
+                        <li>Zadie Smith</li>
+                        <li>Colm Toibin</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+            <li>Bargains</li>
+            <li>Clubs</li>
+            <li>Find Local QBD</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-cart">
+          <input type="text" placeholder="Search Titles..." id="search-input" />
+          <img id="search" src="Icons/searchicon.png" alt="Search Icon">
+        </div>
+
+        <div class="nav-icons">
+          <img src="Icons/heart.png" alt="Wishlist" />
+          <img src="Icons/profile.png" alt="User" />
+          <img src="Icons/Cart.png" alt="Cart" />
+        </div>
+      </div>
+    </header>
+
+<div class="page-title">
+  <div class="title-text">
+    <h1>Fantasy & Sci-fi</h1>
+    <p>
+      Escape into worlds of magic, mythical creatures, and epic quests —
+      where heroes rise, legends are born, and anything is possible.
+    </p>
+  </div>
+  <div class="book-image">
+    <img src="Bookcovers/Fantasy_bookpile.png" alt="Stacked fantasy books" >
+  </div>
+</div>
+
+<div class="products-section">
+  <div class="section-header">
+    <h2>Top Selections</h2>
+    <a href="#">View more...</a>
+    </div>
+         <div class="books-grid" id="books-grid">
+        <!-- Books go here -->
+         </div> 
+  </div>
+
+  <div class="products-section2">
+        <div class="filter-bar">
+            <button class="filter-button" id="filter-toggle">
+                <span class="icon"><img src="Icons/filtericon.png" alt="Filter icon"> </span> Filter
+            </button>
+            
+<!-- Filter Button -->
+<button class="filter-menu" id="filter-toggle">
+  <img src="Icons/filtericon.png" alt="Filter icon"> Filter
+</button>
+
+
+
+<!-- Filter Side Menu -->
+<div class="side-menu" id="filter-menu">
+  <button class="close-btn" id="close-filter">&times;</button>
+  <nav>
+  <!-- Price Range -->
+  <a href="#" class="dropdown-toggle" data-target="price-filter">Price Range</a>
+  <div class="submenu" id="price-filter">
+    <label><input type="radio" name="price" value="under10"> Under $10</label>
+    <label><input type="radio" name="price" value="10-30"checked> $10 - $30</label>
+    <label><input type="radio" name="price" value="25-50"> $25 - $50</label>
+    <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
+  </div>
+
+  <!-- Availability -->
+  <a href="#" class="dropdown-toggle" data-target="availability-filter">Availability</a>
+  <div class="submenu" id="availability-filter">
+    <label><input type="radio" name="availability" value="in-stock"> In Stock</label>
+    <label><input type="radio" name="availability" value="in-stores"> In Stores</label>
+    <label><input type="radio" name="availability" value="special-order"> Special Order</label>
+    <label><input type="radio" name="availability" value="pre-order"> Pre-Order</label>
+  </div>
+
+  <!-- Discounted -->
+  <a href="#" class="dropdown-toggle" data-target="discount-filter">Discounted</a>
+  <div class="submenu" id="discount-filter">
+    <label><input type="radio" name="discount" value="10-20"> 10-20%</label>
+    <label><input type="radio" name="discount" value="20-40"checked> 20-40%</label>
+    <label><input type="radio" name="discount" value="40-60"> 40-60%</label>
+    <label><input type="radio" name="discount" value="over60"> Over 60%</label>
+  </div>
+
+  <!-- Binding -->
+  <a href="#" class="dropdown-toggle" data-target="binding-filter">Binding</a>
+  <div class="submenu" id="binding-filter">
+    <label><input type="radio" name="binding" value="paperback"> Paperback</label>
+    <label><input type="radio" name="binding" value="hardcover"> Hardcover</label>
+    <label><input type="radio" name="binding" value="box-set"> Box Set</label>
+  </div>
+
+  <!-- Dispatch -->
+  <a href="#" class="dropdown-toggle" data-target="dispatch-filter">Dispatch</a>
+  <div class="submenu" id="dispatch-filter">
+    <label><input type="radio" name="dispatch" value="same-day"> Same Day</label>
+    <label><input type="radio" name="dispatch" value="1-2-days"> 1–2 Days</label>
+    <label><input type="radio" name="dispatch" value="3-7-days"> 3–7 Days</label>
+  </div>
+  </nav>
+
+      <div class="filter-footer">
+      <button class="apply-filter-btn">Filter</button>
+     </div>
+
+</div>
+
+            <div class="sort-dropdown">
+                <div class="view-toggle">
+                    <span class="icon active"><img src="Icons/Gridicon.png" alt="Grid Icon"> </span> Grid
+                    <span class="icon"><img src="Icons/Listicon.png" alt="List icon"> </span> List
+                </div>
+
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+                <option>Best Selling</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="genreintroduction">
+            <h1>Browse Fantasy Books</h1>
+            <p>Here in QBD Books, we offer a large range of fantasy books that will whisk you away to enchanted worlds, where magic is real, mythical creatures roam, and epic adventures await at every turn. Whether you’re searching for heroic quests, ancient prophecies, or realms brimming with wonder, there’s a story here waiting to spark your imagination.</p>
+
+        </div>
+
+
+        <div class="books-row1" id="books-row1">
+            <!-- books go here-->
+        </div>
+        <div class="books-row2" id="books-row2">
+        </div>
+        
+
+  <div class="pagination-bar">
+  <div class="show-per-page">
+    <label for="per-page-select">Show</label>
+    <select id="per-page-select">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+    </select>
+    <span>per page</span>
+  </div>
+
+  <div class="pagination-controls">
+    <button class="page-arrow">&lt;</button>
+    <button class="page-number active">1</button>
+    <button class="page-number">2</button>
+    <button class="page-number">3</button>
+    <button class="page-arrow">&gt;</button>
+  </div>
+
+  </div>
+
+
+</div>
+<!--footer starts here-->
+<footer>
+  <div class="footer-main">
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>(07) 3291 7444</p>
+      <p>Contact Form</p>
+      <p>Education / Book Fairs</p>
+
+      <h4>Social</h4>
+      <div class="social-icons">
+        <img src="Icons/socialsicon.png" alt="icons of socials">
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Information</h4>
+      <p>About QBD</p>
+      <p>Loyalty</p>
+      <p>Privacy Policy</p>
+      <p>Terms of Use</p>
+      <p>Jobs</p>
+      <p>Affiliates</p>
+      <p>Sitemap</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Help</h4>
+      <p>Unsubscribe</p>
+      <p>Track My Orders</p>
+      <p>Shipping & Delivery</p>
+      <p>Returns Policy</p>
+      <p>FAQs</p>
+      <p>About Zip</p>
+    </div>
+
+    <div class="footer-payments">
+      <img src="Icons/paymentmethods.png" alt="payment methods">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
+      The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
+      Due to our competitive pricing, we may have not sold all products at their original RRP.
+    </p>
+    <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
+  </div>
+</footer>
+
+</div>
+
+</div>
+</div>
+
+ <script src="Javascript/QBDFilteredBrowse.js"></script>
+</body>
