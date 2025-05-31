@@ -575,13 +575,14 @@ body {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
 }
 
-.category-grid {
+.category-grid a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 35px 100px; /* More spacing between buttons */
   max-width: 750px;
   margin: 0 auto 30px;
   justify-items: center;
+  text-decoration: none;
 }
 
 .category-btn {
