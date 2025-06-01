@@ -511,6 +511,7 @@ body {
   display: flex; 
   justify-content: center;
   color: white;
+  text-decoration: none;
 }
 
 .add-to-cart:hover {
