@@ -584,6 +584,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .cart-id {
   font-size: 0.85em;

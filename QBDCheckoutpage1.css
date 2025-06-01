@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/*limiting screensize */
+.page-wrapper {
+    max-width: 1368px;
+    margin: 0 auto;
+    overflow-x: hidden;  /*ensures elements that flow over screen are hidden*/
+}
+
+
+.promobanner{
+    background-color: #3E0715;
+    color: white;
+    text-align: center;
+    font-size: clamp(0.65rem, 2vw, 0.9rem); /*use percentage for screen size scaling */
+    padding: 6px;
+    font-weight: bold;
+
+}
+
+.navbar{
+    background-color: #921736;
+    position:sticky;
+    top:0; 
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 15px; 
+    color: white;
+    flex-wrap: wrap;
+    z-index: 1001;
+}
+
+
+.navleft {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Base image styles */
+.menu-img {
+  height: 30px;
+  width: auto;
+}
+
+.QBDlogo img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+  padding-left: 15%;
+}
+
+/* Default: show desktop logo, hide mobile logo & hamburger */
+#QBDdlogo {
+  display: block;
+}
+
+#QBDmlogo,
+#hamburgerIcon {
+  display: none;
+  color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 1000px) {
+  #QBDdlogo {
+    display: none;
+  }
+
+  #QBDmlogo {
+    display: block;
+  }
+}
+
+.breadcrumb {
+  background-color: #8a1538;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: clamp(1.2rem, 3vw, 2.3rem);
+  font-weight: bold;
+  height:100px
+}
+
+.grey-container {
+  background-color: #ebebeb;
+  padding: 30px;
+  border-radius: 2em;
+  margin-top: -50px; /* ← remove overlap */
+  height: 700px;
+  z-index: 2;
+}
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-form {
+  flex: 2;
+  margin-right: 2rem;
+  background: white;
+  padding: 0rem 2rem 2rem 2rem;
+  border-radius: 16px;
+}
+
+.checkout-form h3 strong {
+  color:#8a1538;
+}
+
+.checkout-form h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.name-fields,
+.address-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-fields label,
+.address-fields label {
+  flex: 1;
+}
+
+.form-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-btn,
+.continue-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background: #eee;
+}
+
+.continue-btn {
+  background: #7b0d29;
+  color: white;
+}
+
+.order-summary {
+  flex: 1;
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.order-summary .item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.order-summary img {
+  width: 20%;
+  height: auto;
+}
+
+.totals {
+  font-size: 0.95rem;
+}
+
+.totals p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totals h3 {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.gst {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+/*footer*/
+footer {
+  font-family: sans-serif;
+  color: #444;
+  margin-top: -30px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.social-icons img{
+  width: 100px;
+  height: auto;
+}
+
+.footer-payments img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-bottom {
+  background-color: #8a1538; /* QBD maroon */
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 13px;
+  line-height: 1.6;
+}
