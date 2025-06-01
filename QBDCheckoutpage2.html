@@ -37,9 +37,53 @@
     <div class="checkout-form">
         <h3>Information > <strong>Shipping</strong> > Payment</h3>
       <h2>Contact information</h2>
-     
+        <div class="info-box">
+            <p><span class="label">Contact</span> <span class="value">name@gmail.com</span> <a href="#">Change</a></p>
+            <hr />
+            <p>
+                <span class="label">Ship To</span><br />
+                Charlie Smith<br />
+                12 Unimelb STREET<br />
+                KEW, 3101 VIC<br />
+                0412345678 <a href="#">Change</a>
+            </p>
+            </div>
 
-    <!-- Right Column: Order Summary -->
+            <h2>Shipping Method</h2>
+
+            <!-- Shipping Options -->
+            <label class="shipping-option">
+            <input type="radio" name="shipping" value="8.95" />
+            <div class="shipping-label">
+                <span>Parcel Post</span>
+                <small>Estimated 7–14 Days</small>
+            </div>
+            <span class="price">$8.95</span>
+            </label>
+
+            <label class="shipping-option">
+            <input type="radio" name="shipping" value="14.95" />
+            <div class="shipping-label">
+                <span>Express Delivery</span>
+                <small>Estimated 4–6 Days</small>
+            </div>
+            <span class="price">$14.95</span>
+            </label>
+            <br>
+            <!-- Delivery Notes -->
+            <label>
+            Delivery Notes<br />
+            <input type="text" placeholder="E.g. please leave by door..." />
+            </label>
+
+            <div class="form-buttons">
+            <button class="back-btn" onclick="window.location.href='QBDCheckoutpage1.html'" >Back</button>
+            <button class="continue-btn">Continue to Payment</button>
+            </div>
+
+    </div>
+
+        <!-- Right Column: Order Summary -->
     <div class="order-summary">
       <div class="item">
         <img src="Bookcovers/onyx-storm.webp" alt="Onyx Storm"/>
@@ -55,21 +99,18 @@
       </div>
       <hr>
       <br>
-      <div class="totals">
-        <p><span>Subtotal</span><span>$44.98</span></p>
-        <p><span>Shipping</span><span>--</span></p>
-        <br>
+        <div class="totals">
+        <p><span>Subtotal</span><span id="subtotal">$44.98</span></p>
+        <p><span>Shipping</span><span id="shipping-cost">--</span></p>
         <hr>
-        <h3><strong>Estimated Total:</strong><strong>$44.98</strong></h3>
-        <p class="gst">Incl. GST $4.49</p>
-      </div>
+        <h3><strong>Estimated Total:</strong><strong id="estimated-total">$44.98</strong></h3>
+        <p class="gst">Incl. GST <span id="gst">$4.49</span></p>
+        </div>
     </div>
 
- </div>
+  </div>
 
-
-    </div>
-
+  </div>
 <!--footer starts here-->
 <footer>
   <div class="footer-main">
@@ -123,4 +164,33 @@
 
 
 </div>
+
+<script>
+  // Base subtotal
+  const subtotal = 44.98;
+
+  // Select all radio buttons
+  const shippingRadios = document.querySelectorAll('input[name="shipping"]');
+
+  // Listen for changes on each radio
+  shippingRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      const shipping = parseFloat(radio.value);
+      const total = subtotal + shipping;
+      const gst = total * 0.1;
+
+      document.getElementById('shipping-cost').textContent = `$${shipping.toFixed(2)}`;
+      document.getElementById('estimated-total').textContent = `$${total.toFixed(2)}`;
+      document.getElementById('gst').textContent = `$${gst.toFixed(2)}`;
+
+        localStorage.setItem('shippingCost', shipping.toFixed(2));
+        localStorage.setItem('estimatedTotal', total.toFixed(2));
+    });
+  });
+
+
+
+</script>
+
+
 </body>
