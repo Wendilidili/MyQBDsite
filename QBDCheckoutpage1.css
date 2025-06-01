@@ -189,12 +189,14 @@ input[type="tel"] {
 .totals p {
   display: flex;
   justify-content: space-between;
+  margin: 20px 
 }
 
 .totals h3 {
-  display: flex;
+ display: flex;
   justify-content: space-between;
   text-decoration: underline;
+  margin:20px;
 }
 
 .gst {
