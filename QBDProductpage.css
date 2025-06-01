@@ -779,3 +779,37 @@ footer {
   font-size: 13px;
   line-height: 1.6;
 }
+
+
+.qty-label {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.5px;
+
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.qty button {
+  padding: 5px 12px;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  cursor: pointer;
+  color: #333;
+}
+
+.qty span {
+  margin: 0 10px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
