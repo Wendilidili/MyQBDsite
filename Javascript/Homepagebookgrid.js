@@ -60,7 +60,7 @@ books.forEach((book, index) => {
             ${formatTag}
             <div class="book-price">${book.price}</div>
         </div>
-        <button class="add-to-cart">Add to Cart</button>
+        <a href="QBDCart.html" class="add-to-cart">Add to Cart</a>
     `;
 
     if (index === 0) {

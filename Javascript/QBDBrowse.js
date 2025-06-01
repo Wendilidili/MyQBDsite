@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="book-author">${book.author}</div>
           <div class="book-price">${book.price}</div>
         </div>
-        <button class="add-to-cart">Add to Cart</button>
+        <a href="QBDCart.html" class="add-to-cart">Add to Cart</a>
       `;
 
       const anchor = document.createElement('a');
