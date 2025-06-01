@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyx Storm</title>
+  <link rel="stylesheet" href="QBDCart.css">
+</head>
+
+<body>
+
+ <div class="page-wrapper"> 
+
+    <div class="promobanner">
+      UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
+    </div>
+
+    <!--Header-->
+    <header class="navbar">      
+      <div class="navleft">
+        <div class="hamburger">
+                <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
+
+                <!-- Side Navigation -->
+                <div class="side-menu" id="side-menu">
+                  <button class="close-btn" id="close-menu">&times;</button>
+                  <nav>
+                    <a href="QBDHomepage.html">Home</a>
+
+                    <a href="#" class="dropdown-toggle" data-target="books-submenu">Books</a>
+                    <div class="submenu" id="books-submenu">
+                      <a href="#">Fiction</a>
+                      <a href="#">Non-Fiction</a>
+                      <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                      <a href="#">Australian Fiction</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="bargains-submenu">Bargains</a>
+                    <div class="submenu" id="bargains-submenu">
+                      <a href="#">Sale</a>
+                      <a href="#">Clearance</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="clubs-submenu">Clubs</a>
+                    <div class="submenu" id="clubs-submenu">
+                      <a href="#">QBD Book Club</a>
+                      <a href="#">Kids Club</a>
+                    </div>
+
+                    <a href="#" class="dropdown-toggle" data-target="find-submenu">Find Local QBD</a>
+                    <div class="submenu" id="find-submenu">
+                      <a href="#">Store Locator</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <script src="Javascript/MobileMenupage.js"></script>
+
+        </div>
+
+        <div class="QBDlogo">
+          <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
+          <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
+        </div>
+
+        <nav>
+          <ul class="navlinks">
+            <li><a href="QBDHomepage.html">Home</a></li>
+                <li class="dropdown">
+                  <span class="dropbtn">Books ▾</span>
+                  <div class="mega-dropdown">
+                    <div class="dropdown-column">
+                      <h4>Browse by</h4>
+                      <ul>
+                        <li>Fiction</li>
+                        <li>Non-Fiction</li>
+                        <li>Bestsellers</li>
+                        <li>Coming Soon</li>
+                        <li>Sales</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Genre</h4>
+                      <ul>
+                        <a href="QBDBrowse.html">Fantasy & Sci-fi</a>
+                        <li>Australian fiction</li>
+                        <li>Crime</li>
+                        <li>Young Adult</li>
+                        <li>Graphic Novels</li>
+                        <li>Poetry</li>
+                        <li>Romance</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-column">
+                      <h4>Browse by Author</h4>
+                      <ul>
+                        <li>Tony Birch</li>
+                        <li>Claire Keegan</li>
+                        <li>Melissa Lucashenko</li>
+                        <li>Ann Patchett</li>
+                        <li>Zadie Smith</li>
+                        <li>Colm Toibin</li>
+                        <li class="view-all">View All...</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+            <li>Bargains</li>
+            <li>Clubs</li>
+            <li>Find Local QBD</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-cart">
+          <input type="text" placeholder="Search Titles..." id="search-input" />
+          <img id="search" src="Icons/searchicon.png" alt="Search Icon">
+        </div>
+
+        <div class="nav-icons">
+          <img src="Icons/heart.png" alt="Wishlist" />
+          <img src="Icons/profile.png" alt="User" />
+          <img src="Icons/Cart.png" alt="Cart" />
+        </div>
+      </div>
+    </header>
+
+
+            <!--Main Page Content-->
+  <div class="breadcrumb">
+        My Cart
+ </div>
+
+    <div class="my-cart">   
+
+    <div class="cart-content">
+      <div class="cart-items">
+        <h2>Bag (2 Items)</h2>
+
+        <div class="item">
+          <input type="checkbox" class="checkbox" checked />
+          <img src="Bookcovers/onyx-storm.webp" alt="Onyx Storm" />
+          <div class="details">
+            <h3>Onyx Storm</h3>
+            <p class="format">Hardcover</p>
+            <br>
+            <br>
+            <p class="author">Rebecca Yarros</p>
+          </div>
+            <div class="pricing">
+            <div class="price-info">
+                <span class="old-price">$34.99</span>
+                <span class="price">$26.99</span>
+            </div>
+            <div class="qty">
+                <div class="qty-label">QTY</div>
+                <button>-</button><span>1</span><button>+</button>
+            </div>
+            </div>
+          <button class="delete">🗑</button>
+        </div>
+
+        
+        <div class="item">
+          <input type="checkbox" class="checkbox" checked />
+          <img src="Bookcovers/thebookofazrael.webp" alt="The Book of Azrael" />
+          <div class="details">
+            <h3>The Book of Azrael</h3>
+            <br>
+            <br>
+            <p class="author">Amber V. Nicole</p>
+          </div>
+          <div class="pricing">
+          <div class="price-info"></div>
+            <div class="price">$17.99</div>
+            <div class="qty">
+                <div class="qty-label">QTY</div>
+              <button>-</button><span>1</span><button>+</button>
+            </div>
+          </div>
+          
+          <button class="delete">🗑</button>
+        </div>
+
+        <div class="spacer"></div>
+        
+        <div class="cart-actions">
+          <button class="continue">Continue Shopping</button>
+          <button class="update">Update Cart</button>
+        </div>
+      </div>
+
+
+      <div class="summary">
+        <h1>Order Summary</h1>
+        <p>Subtotal <span>$44.98</span></p>
+        <p>Shipping <span>--</span></p>
+        <p class="total">Estimated Total: <span>$44.98</span></p>
+        <p class="gst">Incl. GST <span>$4.49</span></p>
+
+        <input type="text" placeholder="Have a promo code? Enter below" />
+        <button class="apply">Apply</button>
+
+
+        <button class="checkout">Continue to Checkout</button>
+
+        <p class="cart-id">Cart ID: RN4J7F</p>
+      </div>
+
+    </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+ </body>
