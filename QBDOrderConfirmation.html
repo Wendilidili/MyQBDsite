@@ -269,6 +269,52 @@
   </div>
 </footer>
 
+<!-- Mobile Slide-in Search Menu -->
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <button id="close-search" class="close-search">&times;</button>
+    <input type="text" id="overlay-input" placeholder="Search Title..." class="overlay-input" />
+    <button class="overlay-btn">
+      <img src="Icons/searchbwicon.png" alt="Search" />
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileSearchIcon = document.getElementById("search");
+    const searchOverlay = document.getElementById("search-overlay");
+    const closeSearch = document.getElementById("close-search");
+
+    if (mobileSearchIcon && searchOverlay && closeSearch) {
+      mobileSearchIcon.addEventListener("click", function () {
+        searchOverlay.classList.add("active");
+        document.body.classList.add("noscroll");
+      });
+
+      closeSearch.addEventListener("click", function () {
+        searchOverlay.classList.remove("active");
+        document.body.classList.remove("noscroll");
+      });
+    } else {
+      console.warn("Search toggle elements not found.");
+    }
+  });
+
+  //search results linking to other pages: 
+const searchInput = document.getElementById('overlay-input');
+
+searchInput.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `QBDSearch.html?query=${encodeURIComponent(query)}`;
+    }
+  }
+});
+</script>
+
 
     </div>
     </body>
