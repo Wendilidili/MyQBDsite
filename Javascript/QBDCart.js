@@ -3,10 +3,9 @@
 
   searchBox.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      e.preventDefault(); // Optional: prevent form submission
+      e.preventDefault(); 
       const query = searchBox.value.trim();
 
-      // Redirect to a page with the search query in URL
       if (query) {
         window.location.href = `QBDSearch.html?=${encodeURIComponent(query)}`;
       }

@@ -1,3 +1,5 @@
+ 
+ //JS for swsitching between Description and reviews tab.
  const buttons = document.querySelectorAll('.tab-button');
     const contents = document.querySelectorAll('.tab-content');
 

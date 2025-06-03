@@ -1,5 +1,6 @@
 
-  const paymentRadios = document.querySelectorAll('.payment-option input[type="radio"]');
+ //JS for storing the shipping option to display at a later page
+ const paymentRadios = document.querySelectorAll('.payment-option input[type="radio"]');
 
   paymentRadios.forEach(radio => {
     radio.addEventListener('change', () => {
@@ -8,7 +9,6 @@
       );
       radio.closest('.payment-option').classList.add('selected');
 
-      // Save if needed
       localStorage.setItem('paymentMethod', radio.value);
     });
   });

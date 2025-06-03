@@ -1,3 +1,5 @@
+
+//JS for the Sliding book menu on the QBDbrowse page
 document.addEventListener('DOMContentLoaded', () => {
   const gridMappings = {
     'books-grid': [
@@ -145,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//JS for opening and closing the filter menu
 const filterToggle = document.getElementById('filter-toggle');
 const filterMenu = document.getElementById('filter-menu');
 const closeFilter = document.getElementById('close-filter');
@@ -168,15 +171,15 @@ filterDropdowns.forEach(toggle => {
   });
 });
 
-//search results linking to other pages: 
+
+//JS for the search bar - search results linking to other pages: 
   const searchBox = document.getElementById('search-input');
 
   searchBox.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      e.preventDefault(); // Optional: prevent form submission
+      e.preventDefault(); 
       const query = searchBox.value.trim();
 
-      // Redirect to a page with the search query in URL
       if (query) {
         window.location.href = `QBDSearch.html?=${encodeURIComponent(query)}`;
       }

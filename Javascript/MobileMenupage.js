@@ -1,3 +1,5 @@
+
+//JS for the mini slide in menu on the Homepage. 
 const menuToggle = document.getElementById('menu-toggle');
 const sideMenu = document.getElementById('side-menu');
 const closeMenu = document.getElementById('close-menu');

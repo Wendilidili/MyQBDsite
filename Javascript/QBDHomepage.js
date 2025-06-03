@@ -1,3 +1,5 @@
+
+//JS for book product cards on the Homepage
 const books = [
     {
         title: "Onyx Storm",
@@ -47,7 +49,7 @@ books.forEach((book, index) => {
 
     const formatTag = book.format
         ? `<div class="book-format">${book.format}</div>`
-        : `<div class="book-format">&nbsp;</div>`;  // placeholder for alignment
+        : `<div class="book-format">&nbsp;</div>`;  
 
     card.innerHTML = `
         <div class="image-wrapper">
