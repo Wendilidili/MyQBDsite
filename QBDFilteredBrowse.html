@@ -19,10 +19,8 @@
       UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
     </div>
 
-    <!-- Navbar -->
+    <!--Header-->
     <header class="navbar">      
-      
-      
       <div class="navleft">
         <div class="hamburger">
                 <button class="hamburger" id="menu-toggle"><img src="Icons/hamburger.webp" alt="Hamburger menu icon" class="menu-img" id="hamburgerIcon"></button>
@@ -64,11 +62,13 @@
 
         </div>
 
+        <!-- desktop and mobile QBDlogos -->
         <div class="QBDlogo">
           <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
           <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
         </div>
 
+        <!-- Navigation bar and drop down Menu -->
         <nav>
           <ul class="navlinks">
             <li><a href="index.html">Home</a></li>
@@ -118,6 +118,7 @@
             <li>Find Local QBD</li>
           </ul>
         </nav>
+
       </div>
 
       <div class="nav-right">
@@ -134,95 +135,99 @@
       </div>
     </header>
 
-<div class="page-title">
-  <div class="title-text">
-    <h1>Fantasy & Sci-fi</h1>
-    <p>
-      Escape into worlds of magic, mythical creatures, and epic quests —
-      where heroes rise, legends are born, and anything is possible.
-    </p>
-  </div>
-  <div class="book-image">
-    <img src="Bookcovers/Fantasy_bookpile.png" alt="Stacked fantasy books" >
-  </div>
-</div>
-
-<div class="products-section">
-  <div class="section-header">
-    <h2>Top Selections</h2>
-    <a href="#">View more...</a>
+    <!-- page content (title)-->
+    <div class="page-title">
+      <div class="title-text">
+        <h1>Fantasy & Sci-fi</h1>
+        <p>
+          Escape into worlds of magic, mythical creatures, and epic quests —
+          where heroes rise, legends are born, and anything is possible.
+        </p>
+      </div>
+      <div class="book-image">
+        <img src="Bookcovers/Fantasy_bookpile.png" alt="Stacked fantasy books" >
+      </div>
     </div>
-         <div class="books-grid" id="books-grid">
-        <!-- Books go here -->
-         </div> 
-  </div>
 
-  <div class="products-section2">
+        <!-- Top Selections sliding menu book grid -->
+    <div class="products-section">
+      <div class="section-header">
+        <h2>Top Selections</h2>
+        <a href="#">View more...</a>
+        </div>
+            <div class="books-grid" id="books-grid">
+            <!-- Books go here -->
+            </div> 
+    </div>
+
+    <!-- Book Browse Page Content -->
+    <div class="products-section2">
+        <!-- filter bar -->
         <div class="filter-bar">
             <button class="filter-button" id="filter-toggle">
                 <span class="icon"><img src="Icons/filtericon.png" alt="Filter icon"> </span> Filter
             </button>
             
-<!-- Filter Button -->
-<button class="filter-menu" id="filter-toggle">
-  <img src="Icons/filtericon.png" alt="Filter icon"> Filter
-</button>
+            <!-- Filter Button -->
+            <button class="filter-menu" id="filter-toggle">
+              <img src="Icons/filtericon.png" alt="Filter icon"> Filter
+            </button>
 
 
 
-<!-- Filter Side Menu -->
-<div class="side-menu" id="filter-menu">
-  <button class="close-btn" id="close-filter">&times;</button>
-  <nav>
-  <!-- Price Range -->
-  <a href="#" class="dropdown-toggle" data-target="price-filter">Price Range</a>
-  <div class="submenu" id="price-filter">
-    <label><input type="radio" name="price" value="under10"> Under $10</label>
-    <label><input type="radio" name="price" value="10-30"checked> $10 - $30</label>
-    <label><input type="radio" name="price" value="25-50"> $25 - $50</label>
-    <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
-  </div>
+            <!-- Filter Side Menu -->
+            <div class="side-menu" id="filter-menu">
+              <button class="close-btn" id="close-filter">&times;</button>
+              <nav>
+              <!-- Price Range -->
+              <a href="#" class="dropdown-toggle" data-target="price-filter">Price Range</a>
+              <div class="submenu" id="price-filter">
+                <label><input type="radio" name="price" value="under10"> Under $10</label>
+                <label><input type="radio" name="price" value="10-30"checked> $10 - $30</label>
+                <label><input type="radio" name="price" value="25-50"> $25 - $50</label>
+                <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
+              </div>
 
-  <!-- Availability -->
-  <a href="#" class="dropdown-toggle" data-target="availability-filter">Availability</a>
-  <div class="submenu" id="availability-filter">
-    <label><input type="radio" name="availability" value="in-stock"> In Stock</label>
-    <label><input type="radio" name="availability" value="in-stores"> In Stores</label>
-    <label><input type="radio" name="availability" value="special-order"> Special Order</label>
-    <label><input type="radio" name="availability" value="pre-order"> Pre-Order</label>
-  </div>
+              <!-- Availability -->
+              <a href="#" class="dropdown-toggle" data-target="availability-filter">Availability</a>
+              <div class="submenu" id="availability-filter">
+                <label><input type="radio" name="availability" value="in-stock"> In Stock</label>
+                <label><input type="radio" name="availability" value="in-stores"> In Stores</label>
+                <label><input type="radio" name="availability" value="special-order"> Special Order</label>
+                <label><input type="radio" name="availability" value="pre-order"> Pre-Order</label>
+              </div>
 
-  <!-- Discounted -->
-  <a href="#" class="dropdown-toggle" data-target="discount-filter">Discounted</a>
-  <div class="submenu" id="discount-filter">
-    <label><input type="radio" name="discount" value="10-20"> 10-20%</label>
-    <label><input type="radio" name="discount" value="20-40"checked> 20-40%</label>
-    <label><input type="radio" name="discount" value="40-60"> 40-60%</label>
-    <label><input type="radio" name="discount" value="over60"> Over 60%</label>
-  </div>
+              <!-- Discounted -->
+              <a href="#" class="dropdown-toggle" data-target="discount-filter">Discounted</a>
+              <div class="submenu" id="discount-filter">
+                <label><input type="radio" name="discount" value="10-20"> 10-20%</label>
+                <label><input type="radio" name="discount" value="20-40"checked> 20-40%</label>
+                <label><input type="radio" name="discount" value="40-60"> 40-60%</label>
+                <label><input type="radio" name="discount" value="over60"> Over 60%</label>
+              </div>
 
-  <!-- Binding -->
-  <a href="#" class="dropdown-toggle" data-target="binding-filter">Binding</a>
-  <div class="submenu" id="binding-filter">
-    <label><input type="radio" name="binding" value="paperback"> Paperback</label>
-    <label><input type="radio" name="binding" value="hardcover"> Hardcover</label>
-    <label><input type="radio" name="binding" value="box-set"> Box Set</label>
-  </div>
+              <!-- Binding -->
+              <a href="#" class="dropdown-toggle" data-target="binding-filter">Binding</a>
+              <div class="submenu" id="binding-filter">
+                <label><input type="radio" name="binding" value="paperback"> Paperback</label>
+                <label><input type="radio" name="binding" value="hardcover"> Hardcover</label>
+                <label><input type="radio" name="binding" value="box-set"> Box Set</label>
+              </div>
 
-  <!-- Dispatch -->
-  <a href="#" class="dropdown-toggle" data-target="dispatch-filter">Dispatch</a>
-  <div class="submenu" id="dispatch-filter">
-    <label><input type="radio" name="dispatch" value="same-day"> Same Day</label>
-    <label><input type="radio" name="dispatch" value="1-2-days"> 1–2 Days</label>
-    <label><input type="radio" name="dispatch" value="3-7-days"> 3–7 Days</label>
-  </div>
-  </nav>
+              <!-- Dispatch -->
+              <a href="#" class="dropdown-toggle" data-target="dispatch-filter">Dispatch</a>
+              <div class="submenu" id="dispatch-filter">
+                <label><input type="radio" name="dispatch" value="same-day"> Same Day</label>
+                <label><input type="radio" name="dispatch" value="1-2-days"> 1–2 Days</label>
+                <label><input type="radio" name="dispatch" value="3-7-days"> 3–7 Days</label>
+              </div>
+              </nav>
 
-      <div class="filter-footer">
-      <button class="apply-filter-btn">Filter</button>
-     </div>
+                  <div class="filter-footer">
+                  <button class="apply-filter-btn">Filter</button>
+                </div>
 
-</div>
+            </div>
 
             <div class="sort-dropdown">
                 <div class="view-toggle">
@@ -247,7 +252,7 @@
 
         </div>
 
-
+        <!-- Book Browse Book display -->
         <div class="books-row1" id="books-row1">
             <!-- books go here-->
         </div>
@@ -277,64 +282,61 @@
   </div>
 
 
-</div>
-<!--footer starts here-->
-<footer>
-  <div class="footer-main">
-    <div class="footer-column">
-      <h4>Contact</h4>
-      <p>(07) 3291 7444</p>
-      <p>Contact Form</p>
-      <p>Education / Book Fairs</p>
+    </div>
 
-      <h4>Social</h4>
-      <div class="social-icons">
-        <img src="Icons/socialsicon.png" alt="icons of socials">
+  <!--footer starts here-->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>(07) 3291 7444</p>
+        <p>Contact Form</p>
+        <p>Education / Book Fairs</p>
+
+        <h4>Social</h4>
+        <div class="social-icons">
+          <img src="Icons/socialsicon.png" alt="icons of socials">
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <p>About QBD</p>
+        <p>Loyalty</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Jobs</p>
+        <p>Affiliates</p>
+        <p>Sitemap</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Help</h4>
+        <p>Unsubscribe</p>
+        <p>Track My Orders</p>
+        <p>Shipping & Delivery</p>
+        <p>Returns Policy</p>
+        <p>FAQs</p>
+        <p>About Zip</p>
+      </div>
+
+      <div class="footer-payments">
+        <img src="Icons/paymentmethods.png" alt="payment methods">
       </div>
     </div>
 
-    <div class="footer-column">
-      <h4>Information</h4>
-      <p>About QBD</p>
-      <p>Loyalty</p>
-      <p>Privacy Policy</p>
-      <p>Terms of Use</p>
-      <p>Jobs</p>
-      <p>Affiliates</p>
-      <p>Sitemap</p>
+    <div class="footer-bottom">
+      <p>
+        RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
+        The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
+        Due to our competitive pricing, we may have not sold all products at their original RRP.
+      </p>
+      <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
     </div>
+  </footer>
 
-    <div class="footer-column">
-      <h4>Help</h4>
-      <p>Unsubscribe</p>
-      <p>Track My Orders</p>
-      <p>Shipping & Delivery</p>
-      <p>Returns Policy</p>
-      <p>FAQs</p>
-      <p>About Zip</p>
-    </div>
+  </div> <!-- end of page wrapper -->
 
-    <div class="footer-payments">
-      <img src="Icons/paymentmethods.png" alt="payment methods">
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>
-      RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
-      The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
-      Due to our competitive pricing, we may have not sold all products at their original RRP.
-    </p>
-    <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
-  </div>
-</footer>
-
-</div>
-
-</div>
-</div>
-
- <script src="Javascript/QBDFilteredBrowse.js"></script>
 
  <!-- Mobile Slide-in Search Menu -->
 <div class="search-overlay" id="search-overlay">
@@ -347,6 +349,8 @@
   </div>
 </div>
 
+  <!-- JS Script-->
+ <script src="Javascript/QBDFilteredBrowse.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const mobileSearchIcon = document.getElementById("search");

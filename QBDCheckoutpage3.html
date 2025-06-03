@@ -8,7 +8,7 @@
 
 <body>
 
- <div class="page-wrapper"> 
+  <div class="page-wrapper"> 
 
     <div class="promobanner">
       UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
@@ -18,6 +18,7 @@
     <header class="navbar">      
       <div class="navleft">
 
+      <!-- desktop and mobile QBDlogos -->
         <div class="QBDlogo">
           <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
           <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
@@ -25,205 +26,209 @@
       </div>
     </header>
 
-
+    <!-- breadcrumb -->
     <div class="breadcrumb">
         Checkout
     </div>
 
+    <!-- grey container bg - checkout page content -->
     <div class="grey-container">   
 
-  <div class="checkout-container">
-    <!-- Left Column: Form -->
-<div class="checkout-form">
-  <h3><span style="color: #888;">Information</span> > <span style="color: #888;">Shipping</span> > <strong style="color: #8a1538;">Payment</strong></h3>
-  <h2>Check Information</h2>
+      <!-- white container background -->
+      <div class="checkout-container">
+        <!-- Left Column: Form -->
+          <div class="checkout-form">
+            <h3><span style="color: #888;">Information</span> > <span style="color: #888;">Shipping</span> > <strong style="color: #8a1538;">Payment</strong></h3>
+            <h2>Check Information</h2>
 
-  <div class="info-box">
-    <div class="info-section">
-      <div class="info-header">
-        <span class="label">Contact</span>
-        <a href="QBDCheckoutpage1.html">Change</a>
+            <div class="info-box">
+              <div class="info-section">
+                <div class="info-header">
+                  <span class="label">Contact</span>
+                  <a href="QBDCheckoutpage1.html">Change</a>
+                </div>
+                <div class="info-content">
+                  <a href="mailto:name@gmail.com">name@gmail.com</a>
+                </div>
+              </div>
+              <hr />
+
+              <div class="info-section">
+                <div class="info-header">
+                  <span class="label">Ship To</span>
+                  <a href="QBDCheckoutpage1.html">Change</a>
+                </div>
+                <div class="info-content">
+                  Charlie Smith<br />
+                  12 Unimelb STREET<br />
+                  KEW, 3101 VIC<br />
+                  0412345678
+                </div>
+              </div>
+              <hr />
+
+              <div class="info-section">
+                <div class="info-header">
+                  <span class="label">Shipping Method</span>
+                  <a href="QBDCheckoutpage2.html">Change</a>
+                </div>
+                <div class="info-content">
+                  Parcel Post $8.95<br />
+                  Estimated Delivery 7–14 Days
+                </div>
+              </div>
+            </div>
+
+            <h2>Voucher</h2>
+            <label class="voucher-option">
+              <input type="checkbox" />
+              Redeem QBD Voucher
+            </label>
+
+          <h2>Payment Method</h2>
+          <div class="payment-options">
+
+            <div class="payment-option">
+              <label class="payment-method">
+                <input type="radio" name="payment" value="credit" />
+                <span>Credit Card</span>
+              </label>
+              <div class="payment-info">
+                After clicking "Complete Order" you will be redirected to our payment processor to complete your purchase securely.
+              </div>
+            </div>
+
+            <div class="payment-option">
+              <label class="payment-method">
+                <input type="radio" name="payment" value="paypal" />
+                <span>PayPal</span>
+              </label>
+              <div class="payment-info">
+                You will be redirected to PayPal to complete your purchase securely.
+              </div>
+            </div>
+
+            <div class="payment-option">
+              <label class="payment-method">
+                <input type="radio" name="payment" value="afterpay" />
+                <span>
+                  Afterpay <small class="note">(Minimum order value $50)</small>
+                </span>
+              </label>
+              <div class="payment-info">
+                Afterpay allows you to pay in four fortnightly instalments. Minimum order $50.
+              </div>
+            </div>
+
+            <div class="payment-option">
+              <label class="payment-method">
+                <input type="radio" name="payment" value="zip" />
+                <span>Zip</span>
+              </label>
+              <div class="payment-info">
+                Pay later with Zip. Flexible repayments, no upfront payment.
+              </div>
+            </div>
+
+          </div>
+
+            <div class="form-buttons">
+              <button class="back-btn" onclick="window.location.href='QBDCheckoutpage2.html'">Back</button>
+              <button class="continue-btn" onclick="window.location.href='QBDOrderConfirmation.html'">Complete Order</button>
+            </div>
+          </div>
+
+
+            <!-- Right Column: Order Summary -->
+        <div class="order-summary">
+          <div class="item">
+            <img src="Bookcovers/onyx-storm.webp" alt="Onyx Storm"/>
+            <div>
+              <strong>Onyx Storm</strong><br>$26.99<br>QTY: 1
+            </div>
+          </div>
+          <div class="item">
+            <img src="Bookcovers/thebookofazrael.webp" alt="The Book of Azrael"/>
+            <div>
+              <strong>The Book of Azrael</strong><br>$17.99<br>QTY: 1
+            </div>
+          </div>
+          <hr>
+            <h4>Have a promo code? Enter below</h4>
+                <input type="text"/>
+                <button onclick="alert('Invalid Code - Promo code could not be applied')" class="apply">Apply</button>
+            <hr>
+            <br>
+            <div class="totals">
+            <p><span>Subtotal</span><span id="subtotal">$44.98</span></p>
+            <p><span>Shipping</span><span id="shipping-cost">--</span></p>
+            <br>
+            <hr>
+            <h3><strong>Estimated Total:</strong><strong id="estimated-total">$44.98</strong></h3>
+            <p class="gst">Incl. GST <span id="gst">$4.49</span></p>
+            </div>
+        </div>
+
       </div>
-      <div class="info-content">
-        <a href="mailto:name@gmail.com">name@gmail.com</a>
-      </div>
+
     </div>
-    <hr />
 
-    <div class="info-section">
-      <div class="info-header">
-        <span class="label">Ship To</span>
-        <a href="QBDCheckoutpage1.html">Change</a>
-      </div>
-      <div class="info-content">
-        Charlie Smith<br />
-        12 Unimelb STREET<br />
-        KEW, 3101 VIC<br />
-        0412345678
-      </div>
-    </div>
-    <hr />
+    <!--footer starts here-->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>(07) 3291 7444</p>
+          <p>Contact Form</p>
+          <p>Education / Book Fairs</p>
 
-    <div class="info-section">
-      <div class="info-header">
-        <span class="label">Shipping Method</span>
-        <a href="QBDCheckoutpage2.html">Change</a>
-      </div>
-      <div class="info-content">
-        Parcel Post $8.95<br />
-        Estimated Delivery 7–14 Days
-      </div>
-    </div>
-  </div>
+          <h4>Social</h4>
+          <div class="social-icons">
+            <img src="Icons/socialsicon.png" alt="icons of socials">
+          </div>
+        </div>
 
-  <h2>Voucher</h2>
-  <label class="voucher-option">
-    <input type="checkbox" />
-    Redeem QBD Voucher
-  </label>
+        <div class="footer-column">
+          <h4>Information</h4>
+          <p>About QBD</p>
+          <p>Loyalty</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Jobs</p>
+          <p>Affiliates</p>
+          <p>Sitemap</p>
+        </div>
 
-<h2>Payment Method</h2>
-<div class="payment-options">
+        <div class="footer-column">
+          <h4>Help</h4>
+          <p>Unsubscribe</p>
+          <p>Track My Orders</p>
+          <p>Shipping & Delivery</p>
+          <p>Returns Policy</p>
+          <p>FAQs</p>
+          <p>About Zip</p>
+        </div>
 
-  <div class="payment-option">
-    <label class="payment-method">
-      <input type="radio" name="payment" value="credit" />
-      <span>Credit Card</span>
-    </label>
-    <div class="payment-info">
-      After clicking "Complete Order" you will be redirected to our payment processor to complete your purchase securely.
-    </div>
-  </div>
-
-  <div class="payment-option">
-    <label class="payment-method">
-      <input type="radio" name="payment" value="paypal" />
-      <span>PayPal</span>
-    </label>
-    <div class="payment-info">
-      You will be redirected to PayPal to complete your purchase securely.
-    </div>
-  </div>
-
-  <div class="payment-option">
-    <label class="payment-method">
-      <input type="radio" name="payment" value="afterpay" />
-      <span>
-        Afterpay <small class="note">(Minimum order value $50)</small>
-      </span>
-    </label>
-    <div class="payment-info">
-      Afterpay allows you to pay in four fortnightly instalments. Minimum order $50.
-    </div>
-  </div>
-
-  <div class="payment-option">
-    <label class="payment-method">
-      <input type="radio" name="payment" value="zip" />
-      <span>Zip</span>
-    </label>
-    <div class="payment-info">
-      Pay later with Zip. Flexible repayments, no upfront payment.
-    </div>
-  </div>
-
-</div>
-
-  <div class="form-buttons">
-    <button class="back-btn" onclick="window.location.href='QBDCheckoutpage2.html'">Back</button>
-    <button class="continue-btn" onclick="window.location.href='QBDOrderConfirmation.html'">Complete Order</button>
-  </div>
-</div>
-
-
-        <!-- Right Column: Order Summary -->
-    <div class="order-summary">
-      <div class="item">
-        <img src="Bookcovers/onyx-storm.webp" alt="Onyx Storm"/>
-        <div>
-          <strong>Onyx Storm</strong><br>$26.99<br>QTY: 1
+        <div class="footer-payments">
+          <img src="Icons/paymentmethods.png" alt="payment methods">
         </div>
       </div>
-      <div class="item">
-        <img src="Bookcovers/thebookofazrael.webp" alt="The Book of Azrael"/>
-        <div>
-          <strong>The Book of Azrael</strong><br>$17.99<br>QTY: 1
-        </div>
+
+      <div class="footer-bottom">
+        <p>
+          RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
+          The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
+          Due to our competitive pricing, we may have not sold all products at their original RRP.
+        </p>
+        <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
       </div>
-      <hr>
-         <h4>Have a promo code? Enter below</h4>
-            <input type="text"/>
-            <button onclick="alert('Invalid Code - Promo code could not be applied')" class="apply">Apply</button>
-        <hr>
-        <br>
-        <div class="totals">
-        <p><span>Subtotal</span><span id="subtotal">$44.98</span></p>
-        <p><span>Shipping</span><span id="shipping-cost">--</span></p>
-        <br>
-        <hr>
-        <h3><strong>Estimated Total:</strong><strong id="estimated-total">$44.98</strong></h3>
-        <p class="gst">Incl. GST <span id="gst">$4.49</span></p>
-        </div>
-    </div>
-
-  </div>
-
-  </div>
-<!--footer starts here-->
-<footer>
-  <div class="footer-main">
-    <div class="footer-column">
-      <h4>Contact</h4>
-      <p>(07) 3291 7444</p>
-      <p>Contact Form</p>
-      <p>Education / Book Fairs</p>
-
-      <h4>Social</h4>
-      <div class="social-icons">
-        <img src="Icons/socialsicon.png" alt="icons of socials">
-      </div>
-    </div>
-
-    <div class="footer-column">
-      <h4>Information</h4>
-      <p>About QBD</p>
-      <p>Loyalty</p>
-      <p>Privacy Policy</p>
-      <p>Terms of Use</p>
-      <p>Jobs</p>
-      <p>Affiliates</p>
-      <p>Sitemap</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>Help</h4>
-      <p>Unsubscribe</p>
-      <p>Track My Orders</p>
-      <p>Shipping & Delivery</p>
-      <p>Returns Policy</p>
-      <p>FAQs</p>
-      <p>About Zip</p>
-    </div>
-
-    <div class="footer-payments">
-      <img src="Icons/paymentmethods.png" alt="payment methods">
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>
-      RRP refers to the Recommended Retail Price as set out by the original publisher at time of release.<br>
-      The RRP set by overseas publishers may vary to those set by local publishers due to exchange rates and shipping costs.<br>
-      Due to our competitive pricing, we may have not sold all products at their original RRP.
-    </p>
-    <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
-  </div>
-</footer>
+    </footer>
 
 
-</div>
+  </div><!-- end of page wrapper -->
 
-<script src="Javascript/QBDCheckoutpage3.js"></script>
+    <!-- JS Script-->
+  <script src="Javascript/QBDCheckoutpage3.js"></script>
 
 
 </body>

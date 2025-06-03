@@ -10,6 +10,7 @@
 
  <div class="page-wrapper"> 
 
+     <!-- Top Promotional Banner -->
     <div class="promobanner">
       UNI STUDENTS WEEK! - 20% to 60% off RRP. 31/3 - 6/4. Uni Students Only. 
     </div>
@@ -57,11 +58,13 @@
 
         </div>
 
+      <!-- desktop and mobile QBDlogos -->
         <div class="QBDlogo">
           <img id="QBDdlogo" src="Icons/QBDdicon.png" alt="QBD desktop logo">
           <img id="QBDmlogo" src="Icons/QBDmicon.png" alt="QBD mobile logo">
         </div>
 
+      <!-- Navigation bar and drop down Menu -->
         <nav>
           <ul class="navlinks">
             <li><a href="index.html">Home</a></li>
@@ -129,13 +132,14 @@
       </div>
     </header>
 
-            <!--Main Page Content-->
-        <div class="breadcrumb">
-            <h3>Search Results for 'The Book of Azrael'</h3>
-        </div>
+    <!--Bread Crumb-->
+    <div class="breadcrumb">
+         <h3>Search Results for 'The Book of Azrael'</h3>
+    </div>
 
-        <div class="grey-container">
-
+      <!-- grey container background-->
+    <div class="grey-container">
+             <!-- filiter bar -->
               <div class="filter-bar">
                     <button class="filter-button" id="filter-toggle">
                         <span class="icon"><img src="Icons/filtericon.png" alt="Filter icon"> </span> Filter
@@ -149,54 +153,56 @@
 
                         <label for="sort">Sort By</label>
                             <select id="sort">
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                            <option>Newest</option>
-                            <option>Best Selling</option>
+                              <option>Price: Low to High</option>
+                              <option>Price: High to Low</option>
+                              <option>Newest</option>
+                              <option>Best Selling</option>
                             </select>
                     </div>
               </div>
 
+                <!-- content of search result -->
               <div class="search-result">
                 <h2>Showing 1 of 1 Results</h2>
               </div>
-                  <div class="results-row" id="results-row">
+              <div class="results-row" id="results-row">
                               <!-- books go here-->
-                  </div>
+              </div>
         
-             <div class="spacer"></div>
+              <div class="spacer"></div>
 
-            <div class="pagination-bar">
-                <div class="show-per-page">
-                    <label for="per-page-select">Show</label>
-                    <select id="per-page-select">
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="50">50</option>
-                    </select>
-                    <span>per page</span>
-                </div>
+              <div class="pagination-bar">
+                  <div class="show-per-page">
+                      <label for="per-page-select">Show</label>
+                      <select id="per-page-select">
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                      <option value="50">50</option>
+                      </select>
+                      <span>per page</span>
+                  </div>
 
-                <div class="pagination-controls">
-                    <button class="page-arrow">&lt;</button>
-                    <button class="page-number active">1</button>
-                    <button class="page-arrow">&gt;</button>
-                </div>
-            </div>
+                  <div class="pagination-controls">
+                      <button class="page-arrow">&lt;</button>
+                      <button class="page-number active">1</button>
+                      <button class="page-arrow">&gt;</button>
+                  </div>
+              </div>
 
+            <!-- content under search result -->
             <div class="search-catalogue">
                 <h2>Looking for something else?</h2>
                 <div class="search-wrapper">
-                <span class="search-icon"><img src="Icons/searchiconbw.png"></span>
-                <input type="text" placeholder="Search book title here..." />
+                  <span class="search-icon"><img src="Icons/searchiconbw.png"></span>
+                  <input type="text" placeholder="Search book title here..." />
                 </div>
             </div>
 
-        </div>
+    </div>
 
         
-                <!--footer starts here-->
-            <footer>
+    <!--footer starts here-->
+    <footer>
             <div class="footer-main">
                 <div class="footer-column">
                 <h4>Contact</h4>
@@ -244,10 +250,9 @@
                 </p>
                 <p>© 2025 QBD Books – ABN: 54 614 038 765</p>
             </div>
-            </footer>
+    </footer>
 
-        </div>
-        <script src="Javascript/QBDSearch.js"></script>
+  </div> <!-- end of page wrapper -->
 
 <!-- Mobile Slide-in Search Menu -->
 <div class="search-overlay" id="search-overlay">
@@ -260,6 +265,8 @@
   </div>
 </div>
 
+<!-- JS Script-->
+<script src="Javascript/QBDSearch.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const mobileSearchIcon = document.getElementById("search");
